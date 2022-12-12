@@ -8,6 +8,9 @@ fn greet_world() {
     }
 }
 
+fn greet(name : String) {
+    println!("Hello, {}", name);
+}
 fn test_let() {
     let mut x = 5;
     println!("The value of x is {}", x);
@@ -15,8 +18,24 @@ fn test_let() {
     println!("The value of x is {}", x);
 }
 
+fn test_array() {
+    let months = [
+        "January",
+        "February",
+        "March",
+        "4",
+        "5",
+    ];
+    let index = [3,12,13,14];
+    let month = months[index[0]];
+
+    println!("{}", month);
+}
+
 fn main() {
     println!("Hello, world!");
-    greet_world();
-    test_let();
+    //greet_world();
+    //test_let();
+    //greet(String::from("zhanghao"));
+    test_array();
 }
